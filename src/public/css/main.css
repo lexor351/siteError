@@ -115,18 +115,17 @@ div form input{
 }
 
 .select-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 20px;
-    padding: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .input-container{
     margin: 10px;
     padding: 5px;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,4 +152,26 @@ div form input{
     justify-content: center;
     display: flex;
     margin: auto;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-wrapper:focus-within .additional-fields {
+    display: block;
+}
+
+.additional-fields {
+    display: none;
+    margin-top: 10px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
 }
