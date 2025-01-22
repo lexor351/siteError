@@ -4,6 +4,6 @@
 
 @section('main')
     
-<h1>хай
+<h1>Тут документация
     </h1>
 @endsection
