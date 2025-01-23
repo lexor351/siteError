@@ -16,8 +16,7 @@
                 <li><a href="#zabbix">Zabbix</a></li>
             </ul>
         </nav>
-        <div class="user-info">
-            <span>Почта: user@example.com</span>
+            <div>{{ Auth::user()->name }}</div>
         </div>
     </header>
 </body>
