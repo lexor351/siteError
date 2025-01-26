@@ -24,7 +24,7 @@ Route::get('/docs', function () {
 
 Route::get('/main', function () {
     return view('mainv2');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth', 'verified'])->name('main');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
