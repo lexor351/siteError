@@ -175,3 +175,12 @@ div form input{
     border-radius: 4px;
     transition: border-color 0.3s ease;
 }
+
+.alert{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: red;
+    border: 4px solid;
+    border-radius: 4px;
+}

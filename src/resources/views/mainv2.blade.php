@@ -4,8 +4,19 @@
 
 @section('main')
 
+@if($errors->any())
+        <div class="alert">
+            <ul>
+                @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+@endif
+
 <div class="form-container">
     <form method="POST" action="/main/check" class="form">
+        @csrf
         <div class="input-wrapper">
             <div class="input-container"> <textarea name="message" id="message" class=form-control placeholder="Введите сообщение"></textarea> </div>
             <div class="additional-fields">

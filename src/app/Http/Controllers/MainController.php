@@ -18,5 +18,10 @@ class MainController extends Controller
         return view('docs');
     }
 
+    public function check(Request $request) {
+        $valid = $request->validate([
+            'message' => 'required'
+        ]);
+    }
 
 }

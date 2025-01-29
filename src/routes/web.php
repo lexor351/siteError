@@ -22,6 +22,9 @@ Route::get('/docs', function () {
     return view('docs');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::post('/main/check', [MainController::class, 'check'])
+    ->middleware(['auth', 'verified'])->name('main');
+
 Route::get('/main', function () {
     return view('mainv2');
 })->middleware(['auth', 'verified'])->name('main');
